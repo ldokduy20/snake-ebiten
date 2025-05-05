@@ -1,0 +1,20 @@
+package main
+
+import (
+	"log"
+
+	"github.com/hajimehoshi/ebiten/v2"
+)
+
+const WINDOW_WIDTH = 640
+const WINDOW_HEIGHT = 480
+
+func main() {
+	ebiten.SetWindowSize(640, 480)
+	ebiten.SetWindowTitle("Hello, World!")
+
+	game := NewGame()
+	if err := ebiten.RunGame(&game); err != nil {
+		log.Fatal(err)
+	}
+}

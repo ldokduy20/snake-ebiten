@@ -10,7 +10,7 @@ const WINDOW_WIDTH = 640
 const WINDOW_HEIGHT = 480
 
 func main() {
-	ebiten.SetWindowSize(640, 480)
+	ebiten.SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT)
 	ebiten.SetWindowTitle("Hello, World!")
 
 	game := NewGame()

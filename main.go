@@ -11,7 +11,7 @@ const WINDOW_HEIGHT = 480
 
 func main() {
 	ebiten.SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT)
-	ebiten.SetWindowTitle("Hello, World!")
+	ebiten.SetWindowTitle("Snake")
 
 	game := NewGame()
 	if err := ebiten.RunGame(&game); err != nil {
